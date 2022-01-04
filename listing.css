@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#header{
+    height: 10vh;
+    background-color: rgb(221, 186, 143);
+}
+#search{
+    height: 47vh;
+    background-color: green;
+    background: url("1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 46vh;
+}
+#quickSearch{
+    height: 155vh;
+    background-color: rgb(233, 223, 203);
+}
+#footer{
+    height: 10vh;
+    background-color: black;
+}
+#icon{
+    font-size: 35px;
+    line-height: 10vh;
+    margin-left: 5%;
+    cursor: pointer;
+}
+#social{
+    font-size: 35px;
+    line-height: 10vh;
+    margin-right: 5%;
+    position: absolute;
+    right: 0;
+    top: 0%;
+}
+#social i{
+    margin-left: 20px;
+    cursor: pointer;
+}
+#social .facebook{
+    text-decoration: none;
+    color: rgb(79, 79, 238);
+}
+#social .instagram{
+    text-decoration: none;
+    color: rgb(170, 29, 29);
+}
+#social .youtube{
+    text-decoration: none;
+    color: red;
+}
+
+.logo{
+    height: 140px;
+    width: 140px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo >span{
+    font-size: 60px;
+    font-weight: 700;
+    color: red;
+}
+.heading span{
+    text-transform: capitalize;
+    color: white;
+    font-size: 22px;
+    text-shadow: 2px 2px 35px gray;
+    font-weight: bolder;
+    position: absolute;
+    left: 36%;
+    top: 35%;
+}
+#dropdown #city{
+    font-size: 22px;
+}
+#dropdown #rest{
+    font-size: 22px;
+}
+#dropdown{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#maincontainer{
+    width: 80%;
+    height: 150vh;
+    margin-left: 10%;
+    position: absolute;
+    top: 60%;
+}
+.quick{
+    font-size: 25px;
+    font-weight: 800;
+    color: red;
+
+}
+#head p{
+    margin-left: 3%;
+    margin-top: 1%;
+}
+.boxes{
+    height: 300px;
+    width: 30%;
+    float: left;
+    margin-left: 2.5%;
+    margin-top: 3%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    box-shadow: 10px 20px 10px gray;
+}
+.boxes > .img > img{
+    width: 100%;
+    height: 180px;
+    font-size: 30px;
+}
+.boxes .heading{
+    text-align: center;
+}
+
+#footer{
+    color: white;
+    text-align: center;
+    line-height: 10vh;
+}

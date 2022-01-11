@@ -7,6 +7,9 @@
 a{
     color: black;
 }
+#dropdown{
+    width: 100%;
+}
 #header{
     height: 10vh;
     background-color: rgb(240, 167, 95);
@@ -70,6 +73,25 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: .5;
+    animation: move 10s infinite linear;
+}
+@keyframes move{
+    0%{
+        margin-left: 0%;
+    }
+    25%{
+        margin-left: 20%;
+    }
+    50%{
+        margin-left: 0%;
+    }
+    75%{
+        margin-left: -20%;
+    }
+    100%{
+        margin-left: 0%;
+    }
 }
 .logo >span{
     font-size: 60px;
@@ -96,6 +118,7 @@ a{
     position: absolute;
     top: 47%;
     left: 50%;
+    width: 50vw;
     transform: translate(-50%, -50%);
 }
 #maincontainer{
@@ -124,6 +147,25 @@ a{
     border-bottom-left-radius: 30%;
     border-bottom-right-radius: 30%;
     box-shadow: 10px 20px 10px gray;
+    animation: shake 5s infinite linear;
+}
+
+@keyframes shake{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(5deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 .boxes > .img > img{
     width: 100%;
@@ -155,4 +197,106 @@ a{
         transform: rotate(-1deg);
     }
 }
+
+@media screen and (max-width: 1390px){
+    .logo {
+        height: 109px;
+        width: 109px;
+    }
+    .logo >span {
+        font-size: 52px;
+    }
+    #dropdown{
+        left: 55%;
+    }
+    #dropdown #city {
+        font-size: 18px
+    }
+    #dropdown #rest {
+        font-size: 18px
+    }
+    .heading span {
+        font-size: 30px;
+        left: 30%;
+        top: 35%;
+    }
+  
+     
+}
+@media screen and (max-width: 1052px){
+    #dropdown{
+        position: absolute;
+        top: 47%;
+        display: flex;
+        text-align: center;
+    }
+    .heading span {
+        font-size: 23px;
+        left: 33%;
+        top: 36%;
+    }
+    .logo{
+        left: 48%;
+        top: 17%;
+    }
+}
+@media screen and (max-width: 788px){
+    #dropdown{
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h1{
+        font-size: 120%;
+        margin-top: 15%;
+    }
+    h2{
+        font-size: 80%;
+    }
+
+}
+@media screen and (max-width: 680px){
+    #dropdown{
+        left: 38%;
+    }
+    .heading span{
+        left: 21%;
+    }
+    .boxes{
+        width: 45%;
+        margin-top: 7%;
+        margin-left: 5%;
+    }
+    #quickSearch {
+        height: 256vh;
+    }
+    .logo{
+        left: 42%;
+    }
+}
+@media screen and (max-width: 500px){
+    .boxes{
+        width: 90%;
+        margin-top: 9%;
+        margin-left: 5%;
+    }
+    #quickSearch {
+        height: 445vh;
+    }
+    #dropdown{
+        display: flex;
+        flex-direction: column;
+        margin-left: 13%;
+    }
+    .logo {
+        left: 40%;
+        top: 17%;
+    }
+    .heading span{
+        left: 17%;
+        font-size: 20px;
+
+    }
+}
+
 

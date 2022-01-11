@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#header{
+    height: 10vh;
+    background-color: rgb(221, 186, 143);
+}
+body{
+   background-color: ivory;
+}
+
+#icon{
+    font-size: 35px;
+    line-height: 10vh;
+    margin-left: 5%;+
+    cursor: pointer;
+}
+#icon a{
+    text-decoration: none;
+    color: white;
+}
+#social{
+    font-size: 35px;
+    line-height: 10vh;
+    margin-right: 5%;
+    position: absolute;
+    right: 0;
+    top: 0%;
+}
+#social i{
+    margin-left: 20px;
+    cursor: pointer;
+}
+#social .facebook{
+    text-decoration: none;
+    color: rgb(79, 79, 238);
+}
+#social .instagram{
+    text-decoration: none;
+    color: rgb(170, 29, 29);
+}
+#social .youtube{
+    text-decoration: none;
+    color: red;
+}
+.detailpage{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgdiv{
+    height: 25vw;
+    width: 25vw;
+    float: left;
+    border-radius: 10px;
+}
+.imgdiv img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.textdiv{
+    height: 25vw;
+    width: 25vw;
+    float: left;
+    margin-left: 3%;
+
+}
+.buttons button{
+    font-weight: 700;
+    outline: none;
+    border: none;
+    padding:8px 26px;
+    font-size: 22px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.buttons .checkout{
+    background-color: rgb(107, 168, 16);
+    color: white;
+}
+.buttons .cart{
+    background-color: white;
+    color: rgb(107, 168, 16);
+    border: 2px solid rgb(107, 168, 16);
+}
+.buttons .checkout:hover{
+    background-color: white;
+    color: rgb(107, 168, 16);
+    border: 2px solid rgb(107, 168, 16);
+
+}
+.buttons .cart:hover{
+    background-color: rgb(107, 168, 16);
+    color: white;
+    border: 2px solid rgb(107, 168, 16);
+}
+.textdiv h2, h3, h4{
+    margin-top: 2px;
+}
+.textdiv button{
+    margin-top: 20px;
+}
+.textdiv .available{
+    color: green;
+}
+.icons .door{
+    width: 100px;
+    height: 100px;
+}
+.icons .caricon{
+    width: 100px;
+    height: 100px;
+    margin-left: 5%;
+}
+.icons .door img{
+    width: 80%;
+    height:80%;
+}
+.icons .caricon img{
+    width: 100%;
+    height:80%;
+}
+
+.icons{
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:1153px){
+    .imgdiv {
+        height: 40vw;
+        width: 40vw;
+        margin-left: 10%;
+    }
+    .textdiv h2, h3, h4 {
+        margin-top: 5px;
+    }
+
+    .buttons button {
+        padding: 4px 13px;
+        font-size: 20px;
+        
+    } 
+
+}
+@media screen and (max-width:980px){
+    .heading1{
+        margin-top: 5%;
+    }
+    .textdiv{
+        margin-top: -15%;
+    }
+    .imgdiv{
+        margin-top: -15%;
+    }
+}
+
+@media screen and (max-width:750px){
+    .buttons button {
+        padding: 0px 4px;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .heading1{
+        margin-top: 0;
+    }
+    .imgdiv{
+        height: 40vw;
+        width: 40vw;
+        margin-left: 0%;
+    }
+    .textdiv{
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .textdiv h2 {
+        font-size: 20px;
+    }
+    .textdiv h3 {
+        font-size: 13px;
+    }
+    .textdiv h4 {
+        font-size: 10px;
+    }
+    .icons .door img{
+        width: 50%;
+        height: 50%;
+    }
+    .icons .caricon img{
+        width: 50%;
+        height: 50%;
+    }
+    .door p{
+        font-size: 10px;
+    }
+    .caricon p{
+        font-size: 10px;
+    }
+    .icons{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .textdiv{
+        margin-top: -30%;
+    }
+    .imgdiv{
+        margin-top: -30%;
+    }
+    
+}
+@media screen and (max-width:638px){
+.door,.caricon{
+    display: flex;
+    justify-content: space-between;
+    font-size: 60%;
+    width: 40vw;
+}
+.icons{
+    margin-bottom: -50px;
+    margin-top: 10px;
+}
+.textdiv h2, h3, h4 {
+    margin-top: 0px;
+}
+.textdiv{
+    margin-top: -45%;
+}
+.imgdiv{
+    margin-top: -45%;
+    
+}
+}
+
+@media screen and (max-width:575px){
+    .textdiv{
+        margin-top: -55%;
+    }
+    .imgdiv{
+        margin-top: -55%;
+    }
+    .buttons button{
+        padding: 0px 2px;
+        font-size: 10px;
+    }
+    .textdiv .available{
+        font-size: 12px;
+    }
+    .textdiv .heading1{
+        font-size: 15px;
+    }
+}
